@@ -13,8 +13,7 @@ class LektireVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        self.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+
     }
 
 

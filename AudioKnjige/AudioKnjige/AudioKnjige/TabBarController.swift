@@ -13,7 +13,20 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTabBar()
+    }
+    
+    func setupTabBar() {
+        let lektireVC = UINavigationController(rootViewController: LektireVC())
+        lektireVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+        lektireVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+        
+        let knjigeVC = UINavigationController(rootViewController: KnjigeVC())
+        knjigeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+        knjigeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+        
+        viewControllers = [knjigeVC, lektireVC]
+        
     }
     
 
