@@ -18,18 +18,20 @@ class TabBarController: UITabBarController {
     
     func setupTabBar() {
         let lektireVC = UINavigationController(rootViewController: LektireVC())
-        lektireVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        lektireVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            lektireVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            lektireVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            lektireVC.tabBarItem.title = "Lektire"
         
         let knjigeVC = UINavigationController(rootViewController: KnjigeVC())
-        knjigeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        knjigeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        
+            knjigeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            knjigeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            knjigeVC.tabBarItem.title = "Knjige"
         let homeVC = UINavigationController(rootViewController: HomeVC())
-        homeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        homeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            homeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            homeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
         viewControllers = [knjigeVC, lektireVC, homeVC]
-        
+            homeVC.tabBarItem.title = "Home"
+            
     }
     
 
