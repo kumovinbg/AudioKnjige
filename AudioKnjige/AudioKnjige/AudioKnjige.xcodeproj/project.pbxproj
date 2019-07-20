@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		042E0AB722E3566400251DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E0AB622E3566400251DFE /* AppDelegate.swift */; };
-		042E0AB922E3566400251DFE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E0AB822E3566400251DFE /* FirstViewController.swift */; };
-		042E0ABB22E3566400251DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E0ABA22E3566400251DFE /* SecondViewController.swift */; };
+		042E0AB922E3566400251DFE /* KnjigeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E0AB822E3566400251DFE /* KnjigeVC.swift */; };
+		042E0ABB22E3566400251DFE /* LektireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E0ABA22E3566400251DFE /* LektireVC.swift */; };
 		042E0ABE22E3566400251DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0ABC22E3566400251DFE /* Main.storyboard */; };
 		042E0AC022E3566800251DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042E0ABF22E3566800251DFE /* Assets.xcassets */; };
 		042E0AC322E3566800251DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0AC122E3566800251DFE /* LaunchScreen.storyboard */; };
@@ -18,8 +18,8 @@
 /* Begin PBXFileReference section */
 		042E0AB322E3566400251DFE /* AudioKnjige.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioKnjige.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042E0AB622E3566400251DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		042E0AB822E3566400251DFE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		042E0ABA22E3566400251DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		042E0AB822E3566400251DFE /* KnjigeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnjigeVC.swift; sourceTree = "<group>"; };
+		042E0ABA22E3566400251DFE /* LektireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LektireVC.swift; sourceTree = "<group>"; };
 		042E0ABD22E3566400251DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		042E0ABF22E3566800251DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042E0AC222E3566800251DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				042E0AB622E3566400251DFE /* AppDelegate.swift */,
-				042E0AB822E3566400251DFE /* FirstViewController.swift */,
-				042E0ABA22E3566400251DFE /* SecondViewController.swift */,
+				042E0AB822E3566400251DFE /* KnjigeVC.swift */,
+				042E0ABA22E3566400251DFE /* LektireVC.swift */,
 				042E0ABC22E3566400251DFE /* Main.storyboard */,
 				042E0ABF22E3566800251DFE /* Assets.xcassets */,
 				042E0AC122E3566800251DFE /* LaunchScreen.storyboard */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042E0ABB22E3566400251DFE /* SecondViewController.swift in Sources */,
+				042E0ABB22E3566400251DFE /* LektireVC.swift in Sources */,
 				042E0AB722E3566400251DFE /* AppDelegate.swift in Sources */,
-				042E0AB922E3566400251DFE /* FirstViewController.swift in Sources */,
+				042E0AB922E3566400251DFE /* KnjigeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
