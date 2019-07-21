@@ -12,7 +12,7 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.barTintColor = UIColor(red: 38/255, green: 196/255, blue: 133/255, alpha: 1)
+        tabBar.barTintColor = .black
         setupTabBar()
     }
     
@@ -29,8 +29,10 @@ class TabBarController: UITabBarController {
         let homeVC = UINavigationController(rootViewController: HomeVC())
             homeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
             homeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-        viewControllers = [knjigeVC, lektireVC, homeVC]
             homeVC.tabBarItem.title = "Home"
+        
+        viewControllers = [knjigeVC, lektireVC, homeVC]
+        
             
     }
     
