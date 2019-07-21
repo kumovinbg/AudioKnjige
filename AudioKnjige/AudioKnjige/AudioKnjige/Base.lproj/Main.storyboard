@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1200" y="-1063"/>
         </scene>
         <!--Home-->
         <scene sceneID="dRI-Wf-yhy">
@@ -40,7 +40,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qjb-M0-pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488" y="15"/>
+            <point key="canvasLocation" x="2354" y="-468"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="j09-xV-hCs">
+            <objects>
+                <viewController id="hF3-Gr-LJf" customClass="FavoritesVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g9O-XS-vyx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="A7I-OU-Crs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="dPX-7j-S3w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiw-pN-WNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2354" y="387"/>
         </scene>
         <!--Lektire-->
         <scene sceneID="wg7-f3-ORb">
@@ -56,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1199" y="1183"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -68,9 +84,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <segue destination="MNN-oW-SXN" kind="relationship" relationship="viewControllers" id="iaG-VI-wdb"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="MNN-oW-SXN" kind="relationship" relationship="viewControllers" id="iaG-VI-wdb"/>
+                        <segue destination="hF3-Gr-LJf" kind="relationship" relationship="viewControllers" id="uSK-Gp-Pfs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

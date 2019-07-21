@@ -12,6 +12,7 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tabBar.barTintColor = .black
         setupTabBar()
     }
@@ -27,11 +28,17 @@ class TabBarController: UITabBarController {
             knjigeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
             knjigeVC.tabBarItem.title = "Knjige"
         let homeVC = UINavigationController(rootViewController: HomeVC())
-            homeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
-            homeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
+            homeVC.tabBarItem.image = UIImage(named: "home")?.withRenderingMode(.alwaysOriginal)
+            homeVC.tabBarItem.selectedImage = UIImage(named: "home")?.withRenderingMode(.alwaysOriginal)
             homeVC.tabBarItem.title = "Home"
         
-        viewControllers = [knjigeVC, lektireVC, homeVC]
+        let favoritesVC = UINavigationController(rootViewController: FavoritesVC())
+        favoritesVC.tabBarItem.image = UIImage(named: "favorites")?.withRenderingMode(.alwaysOriginal)
+        favoritesVC.tabBarItem.selectedImage = UIImage(named: "favorites")?.withRenderingMode(.alwaysOriginal)
+        favoritesVC.tabBarItem.title = "Favorites"
+        
+        viewControllers = [homeVC,knjigeVC,lektireVC,favoritesVC]
+        
         
             
     }
