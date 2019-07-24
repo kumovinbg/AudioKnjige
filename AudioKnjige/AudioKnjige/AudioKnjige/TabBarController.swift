@@ -23,10 +23,13 @@ class TabBarController: UITabBarController {
             lektireVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
             lektireVC.tabBarItem.title = "Lektire"
         
+        
         let knjigeVC = UINavigationController(rootViewController: KnjigeVC())
             knjigeVC.tabBarItem.image = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
             knjigeVC.tabBarItem.selectedImage = UIImage(named: "icon30")?.withRenderingMode(.alwaysOriginal)
             knjigeVC.tabBarItem.title = "Knjige"
+        
+        
         let homeVC = UINavigationController(rootViewController: HomeVC())
             homeVC.tabBarItem.image = UIImage(named: "home")?.withRenderingMode(.alwaysOriginal)
             homeVC.tabBarItem.selectedImage = UIImage(named: "home")?.withRenderingMode(.alwaysOriginal)
@@ -46,3 +49,5 @@ class TabBarController: UITabBarController {
 
 
 }
+
+
