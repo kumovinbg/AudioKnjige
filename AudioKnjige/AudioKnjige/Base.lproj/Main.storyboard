@@ -40,7 +40,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="3yn-0P-oX4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -77,7 +77,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rpY-uq-xb0" firstAttribute="leading" secondItem="QW4-zz-r5J" secondAttribute="leading" id="Xup-XZ-ob5"/>
                             <constraint firstItem="rpY-uq-xb0" firstAttribute="trailing" secondItem="QW4-zz-r5J" secondAttribute="trailing" id="qe7-9K-1j0"/>
@@ -99,7 +100,7 @@
                     <view key="view" contentMode="scaleToFill" id="r6T-J3-lX9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="bvM-2f-9DX"/>
                     </view>
@@ -116,7 +117,8 @@
                     <view key="view" contentMode="scaleToFill" id="0po-aw-ue8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.65324544910000004" green="0.70070320370000005" blue="0.77971076969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="BYw-kz-y57"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="favorites" id="htR-OH-mqJ"/>
@@ -132,7 +134,8 @@
                     <view key="view" contentMode="scaleToFill" id="iGY-kY-6EI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hAy-M0-hra"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="cZV-4d-r2D"/>
