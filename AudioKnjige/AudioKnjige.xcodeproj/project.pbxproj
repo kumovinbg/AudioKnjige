@@ -44,6 +44,7 @@
 		CEFDD9C322EC628B005514B3 /* phoenix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEFDD9A822EC628B005514B3 /* phoenix.jpg */; };
 		CEFDD9C422EC628B005514B3 /* angels-demons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEFDD9A922EC628B005514B3 /* angels-demons.jpg */; };
 		CEFDD9C722EC6562005514B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDD9C622EC6562005514B3 /* Model.swift */; };
+		CEFDD9C922EC8EC7005514B3 /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDD9C822EC8EC7005514B3 /* DescriptionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		CEFDD9A822EC628B005514B3 /* phoenix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phoenix.jpg; sourceTree = "<group>"; };
 		CEFDD9A922EC628B005514B3 /* angels-demons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "angels-demons.jpg"; sourceTree = "<group>"; };
 		CEFDD9C622EC6562005514B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CEFDD9C822EC8EC7005514B3 /* DescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				042E0AB822E3566400251DFE /* KnjigeVC.swift */,
 				042E0ABA22E3566400251DFE /* LektireVC.swift */,
 				CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */,
+				CEFDD9C822EC8EC7005514B3 /* DescriptionVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				CEFDD9C722EC6562005514B3 /* Model.swift in Sources */,
 				CEF0F7A822EC5535005753B2 /* BookCell.swift in Sources */,
 				CEF0F7A522EC522F005753B2 /* FavoritesVC.swift in Sources */,
+				CEFDD9C922EC8EC7005514B3 /* DescriptionVC.swift in Sources */,
 				042E0ABB22E3566400251DFE /* LektireVC.swift in Sources */,
 				CEF0F7A322EC5211005753B2 /* HomeVC.swift in Sources */,
 				042E0AB722E3566400251DFE /* AppDelegate.swift in Sources */,
