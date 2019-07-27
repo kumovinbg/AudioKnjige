@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dMr-BJ-cNq">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Knjige-->
+        <scene sceneID="pAI-Z2-JvJ">
+            <objects>
+                <viewController id="tBb-5g-43d" customClass="KnjigeVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mbd-jL-54M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-uq-xb0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookCell" rowHeight="100" id="yGk-aE-gcP" customClass="BookCell" customModule="AudioKnjige" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGk-aE-gcP" id="yI0-WL-sor">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="biE-JR-yx2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="99.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="mrD-e5-ReH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LT-Jg-jin">
+                                                    <rect key="frame" x="105" y="0.0" width="304" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="3yn-0P-oX4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMY-E4-ZSA">
+                                                    <rect key="frame" x="105" y="35" width="304" height="64.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="biE-JR-yx2" firstAttribute="leading" secondItem="yI0-WL-sor" secondAttribute="leading" id="07g-Hl-aE4"/>
+                                                <constraint firstItem="EMY-E4-ZSA" firstAttribute="top" secondItem="6LT-Jg-jin" secondAttribute="bottom" constant="5" id="BmE-EI-Uva"/>
+                                                <constraint firstAttribute="bottom" secondItem="EMY-E4-ZSA" secondAttribute="bottom" id="ENf-hS-r2q"/>
+                                                <constraint firstAttribute="trailing" secondItem="6LT-Jg-jin" secondAttribute="trailing" constant="5" id="KgU-RH-PTG"/>
+                                                <constraint firstAttribute="bottom" secondItem="biE-JR-yx2" secondAttribute="bottom" id="Mke-08-xOI"/>
+                                                <constraint firstItem="6LT-Jg-jin" firstAttribute="leading" secondItem="biE-JR-yx2" secondAttribute="trailing" constant="5" id="gGU-FV-ksi"/>
+                                                <constraint firstItem="biE-JR-yx2" firstAttribute="top" secondItem="yI0-WL-sor" secondAttribute="top" id="rRI-ie-BMK"/>
+                                                <constraint firstAttribute="trailing" secondItem="EMY-E4-ZSA" secondAttribute="trailing" constant="5" id="rYf-0r-ngf"/>
+                                                <constraint firstItem="6LT-Jg-jin" firstAttribute="top" secondItem="yI0-WL-sor" secondAttribute="top" id="sRP-Mu-O1C"/>
+                                                <constraint firstItem="EMY-E4-ZSA" firstAttribute="leading" secondItem="biE-JR-yx2" secondAttribute="trailing" constant="5" id="yW4-L1-rQj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookDescription" destination="EMY-E4-ZSA" id="0Tk-OP-BD4"/>
+                                            <outlet property="bookImage" destination="biE-JR-yx2" id="zSA-Gb-KE3"/>
+                                            <outlet property="bookTitle" destination="6LT-Jg-jin" id="mfY-4w-9Yn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tBb-5g-43d" id="Dm4-dh-viZ"/>
+                                    <outlet property="delegate" destination="tBb-5g-43d" id="DLD-Ot-BPd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rpY-uq-xb0" firstAttribute="leading" secondItem="QW4-zz-r5J" secondAttribute="leading" id="Xup-XZ-ob5"/>
+                            <constraint firstItem="rpY-uq-xb0" firstAttribute="trailing" secondItem="QW4-zz-r5J" secondAttribute="trailing" id="qe7-9K-1j0"/>
+                            <constraint firstItem="rpY-uq-xb0" firstAttribute="top" secondItem="QW4-zz-r5J" secondAttribute="top" id="uUP-It-LlQ"/>
+                            <constraint firstItem="rpY-uq-xb0" firstAttribute="bottom" secondItem="QW4-zz-r5J" secondAttribute="bottom" id="zvT-OW-UEK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QW4-zz-r5J"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knjige" image="knjiga" id="FUC-pq-qOF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYm-T4-igS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2046.376811594203" y="-157.36607142857142"/>
+        </scene>
+        <!--Lektire-->
+        <scene sceneID="rcu-EA-oTg">
+            <objects>
+                <viewController id="cHY-Gc-hDV" customClass="LektireVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6T-J3-lX9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="bvM-2f-9DX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lektire" image="lektira" id="aab-Yj-KQf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfj-Hd-obp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1080" y="-157"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="zVh-wB-tPC">
+            <objects>
+                <viewController id="MUQ-Pe-sgz" customClass="FavoritesVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0po-aw-ue8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.65324544910000004" green="0.70070320370000005" blue="0.77971076969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BYw-kz-y57"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites" id="htR-OH-mqJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMv-8Z-cpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="-157"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="QwY-Yb-3G7">
+            <objects>
+                <viewController id="tpO-uR-ZZc" customClass="HomeVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iGY-kY-6EI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hAy-M0-hra"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="cZV-4d-r2D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRy-uO-33y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2943.4782608695655" y="-157.36607142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4aD-0B-hBW">
+            <objects>
+                <tabBarController id="dMr-BJ-cNq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WM7-7k-gLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tpO-uR-ZZc" kind="relationship" relationship="viewControllers" id="MGa-mE-8t7"/>
+                        <segue destination="tBb-5g-43d" kind="relationship" relationship="viewControllers" id="AZZ-4n-VDl"/>
+                        <segue destination="cHY-Gc-hDV" kind="relationship" relationship="viewControllers" id="1gc-cZ-Ygd"/>
+                        <segue destination="MUQ-Pe-sgz" kind="relationship" relationship="viewControllers" id="xaN-13-ajA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKM-MN-ihx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1757" y="-1036"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="favorites" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="knjiga" width="29" height="30"/>
+        <image name="lektira" width="30" height="30"/>
+    </resources>
+</document>
