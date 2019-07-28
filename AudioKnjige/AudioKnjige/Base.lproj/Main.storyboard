@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--KnjigeVC-->
+        <!--Knjige-->
         <scene sceneID="pAI-Z2-JvJ">
             <objects>
-                <viewController id="tBb-5g-43d" customClass="KnjigeVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Knjige" id="tBb-5g-43d" customClass="KnjigeVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mbd-jL-54M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="-1758" y="567"/>
         </scene>
-        <!--DescriptionVC-->
+        <!--descVC-->
         <scene sceneID="Lww-XK-ZyU">
             <objects>
-                <viewController id="2Kq-Li-9GU" customClass="DescriptionVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DescriptionVC" title="descVC" id="2Kq-Li-9GU" customClass="DescriptionVC" customModule="AudioKnjige" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zhF-RX-1tO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hvN-U6-7jc"/>
                     </view>
+                    <connections>
+                        <outlet property="descAuthor" destination="5Fo-dm-Zi7" id="UTL-rk-ptn"/>
+                        <outlet property="descImage" destination="htJ-ob-27q" id="k7H-2P-8NR"/>
+                        <outlet property="descTitle" destination="vfG-8C-XHi" id="8TV-Sx-rX4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FH-yp-26R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
