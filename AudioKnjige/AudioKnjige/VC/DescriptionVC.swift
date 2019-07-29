@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class DescriptionVC: UIViewController {
 
     @IBOutlet weak var descImage: UIImageView!
@@ -17,7 +17,7 @@ class DescriptionVC: UIViewController {
     var sequeTitle = String()
     var sequeNameAuthor = String()
     var sequeImage  = UIImage()
-    
+    let audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()

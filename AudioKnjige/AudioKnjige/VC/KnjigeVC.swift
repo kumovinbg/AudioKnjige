@@ -42,6 +42,7 @@ extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let storyB = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyB.instantiateViewController(withIdentifier: "DescriptionVC") as! DescriptionVC
         self.navigationController?.pushViewController(vc, animated: true)
