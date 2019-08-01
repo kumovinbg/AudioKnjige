@@ -14,12 +14,16 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var descImage: UIImageView!
     @IBOutlet weak var descTitle: UILabel!
     @IBOutlet weak var descAuthor: UILabel!
-    @IBOutlet weak var playButtonOutlet: UIButton!
+    @IBOutlet weak var desc: UITextView!
     
+    @IBOutlet weak var playButtonOutlet: UIButton!
     @IBOutlet weak var stopButtonOutlet: UIButton!
+    
+    
     var sequeTitle = String()
     var sequeNameAuthor = String()
     var sequeImage  = UIImage()
+    var segueDescription = String()
     let audioPlayer = try? AudioPlayer(fileName: "audio.mp3")
     let imagePlayButton = UIImage(named: "play")
     let imageStopButton = UIImage(named: "stop")
@@ -29,6 +33,8 @@ class DescriptionVC: UIViewController {
         descTitle.text = sequeTitle
        descImage.image = sequeImage
         descAuthor.text = sequeNameAuthor
+        desc.text = segueDescription
+        
         playButtonOutlet.setImage(imagePlayButton, for: .normal)
         stopButtonOutlet.setImage(imageStopButton, for: .normal)
         // Do any additional setup after loading the view.

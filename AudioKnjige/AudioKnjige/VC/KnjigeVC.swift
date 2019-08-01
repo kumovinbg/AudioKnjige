@@ -11,6 +11,9 @@ import Alamofire
 import SwiftyJSON
 
 class KnjigeVC: UIViewController {
+    
+    var jsonValue : String = ""
+    var jsonValueArray = [String]()
     	
 
     
@@ -18,13 +21,36 @@ class KnjigeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-
-        
-        
-        
+        getData()
     }
+    
+    func getData() {
+        
+        if let path = Bundle.main.path(forResource: "json", ofType: "txt") {
+            let url=URL(fileURLWithPath: path)
+            Alamofire.request(url).responseJSON { response in
+                
+                let jsonData: JSON = JSON(response.result.value!)
+                
+                
+                for (_, value):(String,JSON) in jsonData["list"] {
+                    self.jsonValue = value["title"].stringValue
+                  
+                    self.jsonValueArray.append(self.jsonValue)
+                   
+                    }
+                
+                
+                
+               
+                
+                
+                
+            }
+        }
 
 
+}
 }
 
 extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
@@ -51,6 +77,7 @@ extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
         vc.sequeNameAuthor = booksArray[indexPath.row].autorsName
         vc.sequeImage = UIImage(named: booksArray[indexPath.row].coverImage)!
         vc.sequeTitle = booksArray[indexPath.row].title
+        vc.segueDescription = jsonValueArray[indexPath.row]
     }
 
     

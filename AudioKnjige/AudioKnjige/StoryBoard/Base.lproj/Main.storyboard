@@ -180,6 +180,7 @@
                         <viewLayoutGuide key="safeArea" id="hvN-U6-7jc"/>
                     </view>
                     <connections>
+                        <outlet property="desc" destination="eFi-6r-kYI" id="Mtf-N0-Gi0"/>
                         <outlet property="descAuthor" destination="5Fo-dm-Zi7" id="UTL-rk-ptn"/>
                         <outlet property="descImage" destination="htJ-ob-27q" id="k7H-2P-8NR"/>
                         <outlet property="descTitle" destination="vfG-8C-XHi" id="8TV-Sx-rX4"/>
