@@ -8,5 +8,6 @@ target 'AudioKnjige' do
 
 pod 'SwiftyJSON'
 pod 'AudioPlayerSwift'
+pod 'Alamofire'
 
 end
