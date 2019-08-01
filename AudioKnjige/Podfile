@@ -7,5 +7,6 @@ target 'AudioKnjige' do
   # Pods for AudioKnjige
 
 pod 'SwiftyJSON'
+pod 'AudioPlayerSwift'
 
 end

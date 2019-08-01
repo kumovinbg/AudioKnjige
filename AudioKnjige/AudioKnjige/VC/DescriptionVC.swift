@@ -7,27 +7,43 @@
 //
 
 import UIKit
-import AVFoundation
+
+import AudioPlayer
 class DescriptionVC: UIViewController {
 
     @IBOutlet weak var descImage: UIImageView!
     @IBOutlet weak var descTitle: UILabel!
     @IBOutlet weak var descAuthor: UILabel!
+    @IBOutlet weak var playButtonOutlet: UIButton!
     
+    @IBOutlet weak var stopButtonOutlet: UIButton!
     var sequeTitle = String()
     var sequeNameAuthor = String()
     var sequeImage  = UIImage()
-    let audioPlayer = AVAudioPlayer()
+    let audioPlayer = try? AudioPlayer(fileName: "audio.mp3")
+    let imagePlayButton = UIImage(named: "play")
+    let imageStopButton = UIImage(named: "stop")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         descTitle.text = sequeTitle
        descImage.image = sequeImage
         descAuthor.text = sequeNameAuthor
-       
+        playButtonOutlet.setImage(imagePlayButton, for: .normal)
+        stopButtonOutlet.setImage(imageStopButton, for: .normal)
         // Do any additional setup after loading the view.
     }
     
-
-   
+    @IBAction func playButton(_ sender: Any) {
+        
+        audioPlayer?.play()
+        
+        
+    }
+    
+    @IBAction func stopButton(_ sender: Any) {
+        
+        audioPlayer?.stop()
+    }
+    
 }

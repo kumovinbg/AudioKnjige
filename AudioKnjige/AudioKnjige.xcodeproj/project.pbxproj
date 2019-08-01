@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		042E0AC022E3566800251DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042E0ABF22E3566800251DFE /* Assets.xcassets */; };
 		042E0AC322E3566800251DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0AC122E3566800251DFE /* LaunchScreen.storyboard */; };
 		B35CD76264FE94B8EF2C6FCC /* Pods_AudioKnjige.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */; };
+		CE1D484822EF5C670062C1CC /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1D484722EF5C660062C1CC /* audio.mp3 */; };
 		CEF0F7A322EC5211005753B2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0F7A222EC5211005753B2 /* HomeVC.swift */; };
 		CEF0F7A522EC522F005753B2 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */; };
 		CEF0F7A822EC5535005753B2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0F7A722EC5535005753B2 /* BookCell.swift */; };
@@ -59,6 +60,7 @@
 		042E0AC422E3566800251DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697360E05410FE8BE2669398 /* Pods-AudioKnjige.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKnjige.debug.xcconfig"; path = "Target Support Files/Pods-AudioKnjige/Pods-AudioKnjige.debug.xcconfig"; sourceTree = "<group>"; };
 		C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKnjige.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1D484722EF5C660062C1CC /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		CEF0F7A222EC5211005753B2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		CEF0F7A722EC5535005753B2 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
@@ -130,11 +132,10 @@
 				CEF0F7A622EC54E0005753B2 /* Cells */,
 				CE98890522E37DD400A3A5CA /* VC */,
 				042E0AB622E3566400251DFE /* AppDelegate.swift */,
-				042E0ABC22E3566400251DFE /* Main.storyboard */,
-				042E0ABF22E3566800251DFE /* Assets.xcassets */,
-				042E0AC122E3566800251DFE /* LaunchScreen.storyboard */,
+				CE1D484622EF57660062C1CC /* StoryBoard */,
 				CEFDD98E22EC628B005514B3 /* Images */,
 				042E0AC422E3566800251DFE /* Info.plist */,
+				042E0ABF22E3566800251DFE /* Assets.xcassets */,
 				CEFDD9C622EC6562005514B3 /* Model.swift */,
 			);
 			path = AudioKnjige;
@@ -154,8 +155,16 @@
 				697360E05410FE8BE2669398 /* Pods-AudioKnjige.debug.xcconfig */,
 				EA7DBD33DF2B011F792150E7 /* Pods-AudioKnjige.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE1D484622EF57660062C1CC /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				042E0AC122E3566800251DFE /* LaunchScreen.storyboard */,
+				042E0ABC22E3566400251DFE /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		CE98890522E37DD400A3A5CA /* VC */ = {
@@ -166,6 +175,7 @@
 				042E0ABA22E3566400251DFE /* LektireVC.swift */,
 				CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */,
 				CEFDD9C822EC8EC7005514B3 /* DescriptionVC.swift */,
+				CE1D484722EF5C660062C1CC /* audio.mp3 */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 				CEFDD9B522EC628B005514B3 /* the-hobbit.jpg in Resources */,
 				CEFDD9C122EC628B005514B3 /* sphinx.jpeg in Resources */,
 				CEFDD9AF22EC628B005514B3 /* hallows.jpg in Resources */,
+				CE1D484822EF5C670062C1CC /* audio.mp3 in Resources */,
 				CEFDD9BC22EC628B005514B3 /* two-towers.jpg in Resources */,
 				CEFDD9BD22EC628B005514B3 /* lost-symbol.jpg in Resources */,
 				CEFDD9C322EC628B005514B3 /* phoenix.jpg in Resources */,
