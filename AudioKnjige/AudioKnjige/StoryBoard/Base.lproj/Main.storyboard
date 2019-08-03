@@ -136,25 +136,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-a4-09U" userLabel="Play">
-                                <rect key="frame" x="0.0" y="763" width="207" height="50"/>
+                                <rect key="frame" x="0.0" y="763" width="414" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7Pd-nN-jZV"/>
-                                    <constraint firstAttribute="width" constant="207" id="n9B-SC-7fK"/>
+                                    <constraint firstAttribute="height" constant="50" id="Gne-Gh-qnE"/>
                                 </constraints>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playButton:" destination="2Kq-Li-9GU" eventType="touchUpInside" id="Tsy-92-u6g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHe-9w-7X9" userLabel="Stop">
-                                <rect key="frame" x="207" y="763" width="207" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RqU-ha-Wpp"/>
-                                    <constraint firstAttribute="width" constant="207" id="igx-cN-xNs"/>
-                                </constraints>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="stopButton:" destination="2Kq-Li-9GU" eventType="touchUpInside" id="HoM-k8-8Qb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,14 +152,13 @@
                             <constraint firstItem="5Fo-dm-Zi7" firstAttribute="top" secondItem="vfG-8C-XHi" secondAttribute="bottom" constant="20" id="7tz-JY-HrA"/>
                             <constraint firstItem="htJ-ob-27q" firstAttribute="leading" secondItem="hvN-U6-7jc" secondAttribute="leading" constant="20" id="Edh-iP-YPr"/>
                             <constraint firstItem="vfG-8C-XHi" firstAttribute="leading" secondItem="htJ-ob-27q" secondAttribute="trailing" constant="20" id="HvO-IJ-Enm"/>
-                            <constraint firstItem="hvN-U6-7jc" firstAttribute="trailing" secondItem="AHe-9w-7X9" secondAttribute="trailing" id="Hxq-Hs-7HB"/>
-                            <constraint firstItem="cZ3-a4-09U" firstAttribute="top" secondItem="eFi-6r-kYI" secondAttribute="bottom" id="LSn-um-ac9"/>
                             <constraint firstItem="eFi-6r-kYI" firstAttribute="trailing" secondItem="hvN-U6-7jc" secondAttribute="trailing" id="Ljc-Sj-UYc"/>
-                            <constraint firstItem="cZ3-a4-09U" firstAttribute="leading" secondItem="hvN-U6-7jc" secondAttribute="leading" id="PhU-f8-a6O"/>
+                            <constraint firstItem="cZ3-a4-09U" firstAttribute="bottom" secondItem="hvN-U6-7jc" secondAttribute="bottom" id="RSz-ac-eQc"/>
                             <constraint firstItem="eFi-6r-kYI" firstAttribute="top" secondItem="htJ-ob-27q" secondAttribute="bottom" constant="8" id="VSo-nf-qbt"/>
+                            <constraint firstItem="cZ3-a4-09U" firstAttribute="leading" secondItem="hvN-U6-7jc" secondAttribute="leading" id="fdY-qQ-pOT"/>
                             <constraint firstItem="vfG-8C-XHi" firstAttribute="top" secondItem="hvN-U6-7jc" secondAttribute="top" constant="20" id="fx8-Ik-17f"/>
-                            <constraint firstItem="AHe-9w-7X9" firstAttribute="top" secondItem="eFi-6r-kYI" secondAttribute="bottom" id="g0s-es-Mrn"/>
                             <constraint firstItem="hvN-U6-7jc" firstAttribute="trailing" secondItem="5Fo-dm-Zi7" secondAttribute="trailing" id="mRY-p4-qb4"/>
+                            <constraint firstItem="hvN-U6-7jc" firstAttribute="trailing" secondItem="cZ3-a4-09U" secondAttribute="trailing" id="nhy-Qt-Suf"/>
                             <constraint firstItem="htJ-ob-27q" firstAttribute="top" secondItem="hvN-U6-7jc" secondAttribute="top" constant="20" id="slC-9w-3Ya"/>
                             <constraint firstItem="eFi-6r-kYI" firstAttribute="leading" secondItem="hvN-U6-7jc" secondAttribute="leading" id="tg5-ld-JV3"/>
                             <constraint firstItem="hvN-U6-7jc" firstAttribute="bottom" secondItem="eFi-6r-kYI" secondAttribute="bottom" constant="50" id="v4H-ZK-Y9o"/>
@@ -185,7 +172,6 @@
                         <outlet property="descImage" destination="htJ-ob-27q" id="k7H-2P-8NR"/>
                         <outlet property="descTitle" destination="vfG-8C-XHi" id="8TV-Sx-rX4"/>
                         <outlet property="playButtonOutlet" destination="cZ3-a4-09U" id="4jP-tP-OsQ"/>
-                        <outlet property="stopButtonOutlet" destination="AHe-9w-7X9" id="zxW-4e-4hK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FH-yp-26R" userLabel="First Responder" sceneMemberID="firstResponder"/>
