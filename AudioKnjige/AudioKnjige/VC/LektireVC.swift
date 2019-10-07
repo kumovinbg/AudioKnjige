@@ -13,9 +13,14 @@ class LektireVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        nemanja()
     }
     
     
+    
+    //nemanja
+    func nemanja() {
+        print("nemanja")
+    }
 }
 
