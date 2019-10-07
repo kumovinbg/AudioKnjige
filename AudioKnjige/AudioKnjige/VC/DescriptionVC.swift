@@ -11,6 +11,7 @@ import AudioPlayer
 import AVKit
 
 
+
 class DescriptionVC: UIViewController {
     
 
@@ -23,7 +24,6 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var playButtonOutlet: UIButton!
   
    
-    var sequeUrl : URL?
     var sequeTitle = String()
     var sequeNameAuthor = String()
     var sequeImage  = UIImage()
@@ -55,18 +55,23 @@ class DescriptionVC: UIViewController {
         
         var player: AVPlayer!
         
-        let url = URL(string: "https://onedrive.live.com/?authkey=%21AAQJQgsn64fNT30&cid=BCFF406CD02821BB&id=BCFF406CD02821BB%2117930&parId=root&o=OneUp")
+    
+       // var njihov = "https://drive.google.com/file/d/11MPEaowO6ZjL0RWFSSXjQwCI6buzOb87/view?usp=sharing"
+        
+        let url = URL(string: "https://drive.google.com/uc?export=open&id=11MPEaowO6ZjL0RWFSSXjQwCI6buzOb87")
+        
+
         let playerItem = AVPlayerItem(url: url!)
         player = AVPlayer(playerItem: playerItem)
-        
-       let playerViewController = AVPlayerViewController()
+
+        let playerViewController = AVPlayerViewController()
         playerViewController.player = player
-        
+
         self.present(playerViewController, animated: true) {
              playerViewController.player?.play()
         }
-       
-
+        
+      
         
     }
 

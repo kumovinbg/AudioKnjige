@@ -49,12 +49,7 @@ class KnjigeVC: UIViewController {
                    
                 }
                 
-                
-                
-               
-                
-                
-                
+    
             }
         }
 
@@ -83,11 +78,12 @@ extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
         let storyB = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyB.instantiateViewController(withIdentifier: "DescriptionVC") as! DescriptionVC
         self.navigationController?.pushViewController(vc, animated: true)
+        
+        
         vc.sequeNameAuthor = booksArray[indexPath.row].autorsName
         vc.sequeImage = UIImage(named: booksArray[indexPath.row].coverImage)!
         vc.sequeTitle = booksArray[indexPath.row].title
         vc.segueDescription = descValueArray[indexPath.row]
-        vc.sequeUrl = urlValueArray[indexPath.row]
     }
 
     
