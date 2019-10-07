@@ -24,8 +24,11 @@ class KnjigeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+<<<<<<< Updated upstream
         
         getData()
+=======
+>>>>>>> Stashed changes
     }
     
     func getData() {
@@ -55,6 +58,10 @@ class KnjigeVC: UIViewController {
 
 
 }
+}
+
+func nikola() {
+//    test
 }
 
 extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
