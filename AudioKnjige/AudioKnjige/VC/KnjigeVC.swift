@@ -83,7 +83,7 @@ extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
         vc.sequeNameAuthor = booksArray[indexPath.row].autorsName
         vc.sequeImage = UIImage(named: booksArray[indexPath.row].coverImage)!
         vc.sequeTitle = booksArray[indexPath.row].title
-        vc.segueDescription = descValueArray[indexPath.row]
+        
     }
 
     
