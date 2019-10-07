@@ -24,40 +24,9 @@ class KnjigeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-<<<<<<< Updated upstream
-        
-        getData()
-=======
->>>>>>> Stashed changes
+
     }
     
-    func getData() {
-        
-        if let path = Bundle.main.path(forResource: "json", ofType: "txt") {
-            let url=URL(fileURLWithPath: path)
-            Alamofire.request(url).responseJSON { response in
-                
-                let jsonData: JSON = JSON(response.result.value!)
-                
-                
-                for (_, value):(String,JSON) in jsonData["descriptions"] {
-                    self.descValue = value.stringValue
-                    self.descValueArray.append(self.descValue)
-                    }
-                
-                for (_, value):(String,JSON) in jsonData["urls"] {
-                    self.urlValue = value.stringValue
-                    let urlObject = URL(string: self.urlValue)
-                    self.urlValueArray.append(urlObject!)
-                   
-                }
-                
-    
-            }
-        }
-
-
-}
 }
 
 func nikola() {
