@@ -183,11 +183,40 @@
                     <view key="view" contentMode="scaleToFill" id="r6T-J3-lX9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-Sg-DnS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellData" rowHeight="80" id="EN5-4a-qoB" customClass="LektireTableView" customModule="AudioKnjige" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EN5-4a-qoB" id="1yj-1C-iRw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cHY-Gc-hDV" id="Uc6-PG-7OH"/>
+                                    <outlet property="delegate" destination="cHY-Gc-hDV" id="uZ8-XS-ZSp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bvM-2f-9DX" firstAttribute="bottom" secondItem="gS0-Sg-DnS" secondAttribute="bottom" id="6IY-Cp-Msw"/>
+                            <constraint firstItem="gS0-Sg-DnS" firstAttribute="leading" secondItem="bvM-2f-9DX" secondAttribute="leading" id="MmO-WU-jo5"/>
+                            <constraint firstItem="bvM-2f-9DX" firstAttribute="trailing" secondItem="gS0-Sg-DnS" secondAttribute="trailing" id="eXq-vS-qhL"/>
+                            <constraint firstItem="gS0-Sg-DnS" firstAttribute="top" secondItem="r6T-J3-lX9" secondAttribute="top" id="ec1-vt-iX9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bvM-2f-9DX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lektire" image="lektira" id="aab-Yj-KQf"/>
+                    <connections>
+                        <outlet property="myTable" destination="gS0-Sg-DnS" id="KXA-g1-mct"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfj-Hd-obp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
