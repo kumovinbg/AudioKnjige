@@ -13,12 +13,18 @@ class AudioBooks {
     var autorsName : String
     var coverImage : String
     
+    
     init(title: String, autorsName: String, coverImage: String) {
         self.title = title
         self.autorsName = autorsName
         self.coverImage = coverImage
+       
     }
     
+}
+
+struct AudioKnjige: Codable {
+    let descriptions: [String]
 }
 
 

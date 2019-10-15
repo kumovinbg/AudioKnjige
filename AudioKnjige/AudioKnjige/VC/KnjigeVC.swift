@@ -10,7 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-
 class KnjigeVC: UIViewController {
     
     var descValue : String = ""
@@ -18,20 +17,37 @@ class KnjigeVC: UIViewController {
     
     var urlValue : String = ""
     var urlValueArray = [URL]()
-    	
+    var model : [AudioKnjige?] = []
+ 
+    func getData() {
+            guard let path = Bundle.main.path(forResource: "jsonBooks", ofType: "txt") else {
+                fatalError("Default userList.json not found in project")
+            }
+           let url = URL(fileURLWithPath: path )
+        
 
-    
+            do {
+
+                let jsonData = try Data(contentsOf: url)
+
+                guard let books = try? JSONDecoder().decode([AudioKnjige].self, from: jsonData) else {
+                    fatalError("Decoding users list from default jsonBooks.txt Error - Json decoding failed")
+                }
+                model = books
+                print(model)
+            } catch {
+                fatalError("Data not found in jsonBooks.txt")
+            }
+        }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       getData()
 
     }
     
 }
 
-func nikola() {
-//    test
-}
+
 
 extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
     
@@ -59,7 +75,7 @@ extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
         vc.sequeNameAuthor = booksArray[indexPath.row].autorsName
         vc.sequeImage = UIImage(named: booksArray[indexPath.row].coverImage)!
         vc.sequeTitle = booksArray[indexPath.row].title
-        
+        //vc.segueDescription = model[indexPath.row]
     }
 
     
