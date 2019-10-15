@@ -1,0 +1,7 @@
+{
+"title" : "naslov",
+"author": "pisac knjige",
+"image" : "image url",
+"description": "opis",
+"genre": "zanr"
+}

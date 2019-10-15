@@ -13,6 +13,9 @@
 		042E0ABE22E3566400251DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0ABC22E3566400251DFE /* Main.storyboard */; };
 		042E0AC022E3566800251DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042E0ABF22E3566800251DFE /* Assets.xcassets */; };
 		042E0AC322E3566800251DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0AC122E3566800251DFE /* LaunchScreen.storyboard */; };
+		046EAEE2234BBE1400B496BA /* jsonLektire.txt in Resources */ = {isa = PBXBuildFile; fileRef = 046EAEE1234BBE1400B496BA /* jsonLektire.txt */; };
+		046EAEE4234F802E00B496BA /* ModelLektire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EAEE3234F802E00B496BA /* ModelLektire.swift */; };
+		046EAEE6234FC56100B496BA /* LektireTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EAEE5234FC56100B496BA /* LektireTableView.swift */; };
 		04C751B922F348BC006B74AE /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04C751B822F348BC006B74AE /* json.txt */; };
 		B35CD76264FE94B8EF2C6FCC /* Pods_AudioKnjige.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */; };
 		CE1D484822EF5C670062C1CC /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1D484722EF5C660062C1CC /* audio.mp3 */; };
@@ -59,6 +62,9 @@
 		042E0ABF22E3566800251DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042E0AC222E3566800251DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042E0AC422E3566800251DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046EAEE1234BBE1400B496BA /* jsonLektire.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = jsonLektire.txt; sourceTree = "<group>"; };
+		046EAEE3234F802E00B496BA /* ModelLektire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLektire.swift; sourceTree = "<group>"; };
+		046EAEE5234FC56100B496BA /* LektireTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LektireTableView.swift; sourceTree = "<group>"; };
 		04C751B822F348BC006B74AE /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
 		697360E05410FE8BE2669398 /* Pods-AudioKnjige.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKnjige.debug.xcconfig"; path = "Target Support Files/Pods-AudioKnjige/Pods-AudioKnjige.debug.xcconfig"; sourceTree = "<group>"; };
 		C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKnjige.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +145,9 @@
 				042E0AC422E3566800251DFE /* Info.plist */,
 				042E0ABF22E3566800251DFE /* Assets.xcassets */,
 				CEFDD9C622EC6562005514B3 /* Model.swift */,
+				046EAEE3234F802E00B496BA /* ModelLektire.swift */,
 				04C751B822F348BC006B74AE /* json.txt */,
+				046EAEE1234BBE1400B496BA /* jsonLektire.txt */,
 			);
 			path = AudioKnjige;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF0F7A722EC5535005753B2 /* BookCell.swift */,
+				046EAEE5234FC56100B496BA /* LektireTableView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 				CEFDD9C322EC628B005514B3 /* phoenix.jpg in Resources */,
 				CEFDD9B022EC628B005514B3 /* invasion.jpg in Resources */,
 				CEFDD9C222EC628B005514B3 /* intervention.jpg in Resources */,
+				046EAEE2234BBE1400B496BA /* jsonLektire.txt in Resources */,
 				CEFDD9B122EC628B005514B3 /* shock.jpg in Resources */,
 				04C751B922F348BC006B74AE /* json.txt in Resources */,
 				CEFDD9AB22EC628B005514B3 /* chamber.jpg in Resources */,
@@ -373,9 +383,11 @@
 				CEF0F7A822EC5535005753B2 /* BookCell.swift in Sources */,
 				CEF0F7A522EC522F005753B2 /* FavoritesVC.swift in Sources */,
 				CEFDD9C922EC8EC7005514B3 /* DescriptionVC.swift in Sources */,
+				046EAEE4234F802E00B496BA /* ModelLektire.swift in Sources */,
 				042E0ABB22E3566400251DFE /* LektireVC.swift in Sources */,
 				CEF0F7A322EC5211005753B2 /* HomeVC.swift in Sources */,
 				042E0AB722E3566400251DFE /* AppDelegate.swift in Sources */,
+				046EAEE6234FC56100B496BA /* LektireTableView.swift in Sources */,
 				042E0AB922E3566400251DFE /* KnjigeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

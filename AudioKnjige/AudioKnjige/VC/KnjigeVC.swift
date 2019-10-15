@@ -24,14 +24,11 @@ class KnjigeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        
     }
     
 }
 
-func nikola() {
-//    test
-}
 
 extension KnjigeVC: UITableViewDataSource, UITableViewDelegate {
     
