@@ -15,6 +15,7 @@
 		042E0AC322E3566800251DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E0AC122E3566800251DFE /* LaunchScreen.storyboard */; };
 		04C751B922F348BC006B74AE /* jsonBooks.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04C751B822F348BC006B74AE /* jsonBooks.txt */; };
 		B35CD76264FE94B8EF2C6FCC /* Pods_AudioKnjige.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */; };
+		CE13D2B62355C19300A66A7C /* LektireTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13D2B52355C19300A66A7C /* LektireTableView.swift */; };
 		CE1D484822EF5C670062C1CC /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1D484722EF5C660062C1CC /* audio.mp3 */; };
 		CEF0F7A322EC5211005753B2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0F7A222EC5211005753B2 /* HomeVC.swift */; };
 		CEF0F7A522EC522F005753B2 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */; };
@@ -62,6 +63,7 @@
 		04C751B822F348BC006B74AE /* jsonBooks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsonBooks.txt; sourceTree = "<group>"; };
 		697360E05410FE8BE2669398 /* Pods-AudioKnjige.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKnjige.debug.xcconfig"; path = "Target Support Files/Pods-AudioKnjige/Pods-AudioKnjige.debug.xcconfig"; sourceTree = "<group>"; };
 		C9219A26D467A37446810578 /* Pods_AudioKnjige.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKnjige.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE13D2B52355C19300A66A7C /* LektireTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LektireTableView.swift; path = AudioKnjige/Cells/LektireTableView.swift; sourceTree = SOURCE_ROOT; };
 		CE1D484722EF5C660062C1CC /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		CEF0F7A222EC5211005753B2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CEF0F7A422EC522F005753B2 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF0F7A722EC5535005753B2 /* BookCell.swift */,
+				CE13D2B52355C19300A66A7C /* LektireTableView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				CEFDD9C922EC8EC7005514B3 /* DescriptionVC.swift in Sources */,
 				042E0ABB22E3566400251DFE /* LektireVC.swift in Sources */,
 				CEF0F7A322EC5211005753B2 /* HomeVC.swift in Sources */,
+				CE13D2B62355C19300A66A7C /* LektireTableView.swift in Sources */,
 				042E0AB722E3566400251DFE /* AppDelegate.swift in Sources */,
 				042E0AB922E3566400251DFE /* KnjigeVC.swift in Sources */,
 			);
